@@ -1,0 +1,114 @@
+events in javascript:
+    by using javascript , we create dynamic web pages
+events are generally used with the combination of javascript
+
+events in javascrpt:
+
+abort-occurs when the user cancels loading the image
+click-occurs when the user clicks on a link or form element
+error-occurs when an error happens during loading of doc
+focus-occur when inputfocus is given to a form element
+load - occurs when a page is loaded into navigator
+mouseover-occurs when the user moves the pointer off
+mouseover-occurs when the user moves the pointer over
+reset-when the user clears a form using the reset button
+select-occurs when the user selects a form elements
+submit - occurs when a form is submitted
+unload - occurs when the userleaves a page
+ 
+onclick is a general function
+
+syntax:
+--------
+ in html
+ <element onclick="somefunction">
+
+in javascript:
+object.onclick="somefunction"
+
+onload:
+------
+
+<script >
+ function load(){
+alert('welcome to the web page')
+}
+</script>
+
+but where we have to specify this ?
+it will be declared in the body tag
+
+<body onload="load">
+some html code inside the body
+
+</body>
+
+output : it will indicate the message whenever the page reloads or
+newly opened
+
+we can apply this to images as well:
+example:
+function imageload(){
+alert('image loaded succesfully')
+}
+
+we declare it in the image tab because we are applying to it an 
+image
+
+<image src="html.5.png" widht="200px" height="200px" onload="imageload"/>
+it will success when the image loads success if no it does not
+display the message
+
+on error
+---------
+
+<script type="text/javascript">
+function myimageerror(){
+alert('image unabletoload')
+}
+
+</script>
+
+in img tag:
+<img src="html.png" height="200px" weight="200px" onerror="myimagerror()"
+alt="sorryimageresouresnotloaded />
+</body>
+
+when even there is a error we can use this 
+
+onmousemove event:
+-----------------
+onmouseover and onmouseout : when the cursor moves towards
+it and when the cursor moves away from the element
+
+this can be used as whenever we moves towards an element its
+size becomes big else small
+
+<script type="text/javascript">
+
+function Bigimage(x){
+x.style.width="300px";
+
+x.style.height="300px";
+}
+
+function smallimage(x){
+x.style.width="30px";
+
+x.style.height="30px";
+}
+</script>
+
+<img src ="kamal.jpg" width="30px" height="30px"
+onmouseover="bigimage(this)" onmouseout="smallimage(this)"
+/>
+
+
+global functions :
+eval
+isFinite
+parseint
+parsefloat
+
+
+

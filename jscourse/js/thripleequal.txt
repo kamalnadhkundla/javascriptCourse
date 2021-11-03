@@ -1,0 +1,17 @@
+// java script takes everyting as var 
+example:
+ var user ="2";
+ 
+ if(2== user){
+     console.log("executed event though user is string because java scripts considers everything as var only to overcome this we use
+     "===" to identify the type");
+ }
+
+ correct example 
+ var user ="2";
+ 
+ if(2===user){
+    comsole.log("it doesnot execute);
+ }
+
+ check the conditional.js for execution.
